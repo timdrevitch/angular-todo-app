@@ -1,0 +1,22 @@
+<div class="add-todo">
+  <div class="input-container">
+    <input
+      type="text"
+      [(ngModel)]="newTodo"
+      placeholder="Add a new to-do item"
+      (keyup.enter)="addTodo()"
+    >
+    <button (click)="addTodo()">Add</button>
+  </div>
+</div>
+<div class="todo-list">
+  <ul>
+    <li *ngFor="let item of todoItems">
+      <div class="todo-item">
+        <span>{{ item }}</span>
+        <button class="remove-button" (click)="removeTodo(item)">X</button>
+      </div>
+    </li>
+  </ul>
+  <p class="empty-message" *ngIf="todoItems.length === 0">There are no to-do items yet.</p>
+</div>

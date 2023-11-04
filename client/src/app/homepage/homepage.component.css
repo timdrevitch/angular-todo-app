@@ -1,0 +1,116 @@
+* {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+span {
+    background: none;
+}
+
+/* Style the to-do list container */
+.todo-list {
+  background: #f5f5f5;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+
+/* Style the individual to-do items */
+.todo-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.todo-list li {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  margin: 5px 0;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-list li:last-child {
+  margin-bottom: 0;
+}
+
+/* Style the input field and button for adding to-do items */
+.add-todo {
+  margin-top: 20px;
+}
+
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: gray;
+  padding-left: 3px;
+  padding-right: 3px;
+  height: 40px; /* Adjust the height as needed */
+}
+
+.input-container input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: white;
+  padding-left: 5px;
+  height: 80%; /* Match the height of the container */
+}
+
+.input-container button {
+  background: #37c46d;
+  color: #fff;
+  border: none;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+  padding: 5px 10px;
+  transition: background 0.2s;
+  height: 80%; /* Match the height of the container */
+}
+
+.input-container button:hover {
+  background: #015018;
+}
+
+.add-todo button:hover {
+  background: #015018;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background: none;
+  padding: 5px;
+}
+
+.todo-item span {
+  flex: 1; /* Grow and take up available space on the left */
+  padding-right: 10px; /* Add some spacing between text and button */
+}
+
+.remove-button {
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 5px 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.remove-button:hover {
+  background: darkred;
+}
+
+.empty-message {
+  font-style: italic;
+  color: gray;
+}
